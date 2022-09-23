@@ -1,3 +1,5 @@
+import './style.scss'
+
 export function Lista() {
     const tarefas = [{
         tarefa: 'React',
@@ -12,11 +14,11 @@ export function Lista() {
         tempo: '01:00:00'
     }]
     return (
-        <aside>
+        <aside className="listaTarefas">
             <h2> Estudos do dia </h2>
             <ul>
                 {tarefas.map((item, index) => (
-                    <li key={index}>
+                    <li key={index} className="item">
                         <h3>
                             {item.tarefa}
                         </h3>
@@ -25,7 +27,7 @@ export function Lista() {
                         </span>
                     </li>
                 ))}
-            </ul>;
+            </ul>
         </aside>
     );
 }
