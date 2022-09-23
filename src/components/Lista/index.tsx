@@ -1,7 +1,7 @@
 import Item from './Item';
 import style from './Lista.module.scss';
 
-export function Lista() {
+export default function Lista() {
     const tarefas = [{
         tarefa: 'React',
         tempo: '02:00:00'

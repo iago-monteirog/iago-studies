@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Botao.module.scss';
 
-    export class Botao extends React.Component<{ texto: string }> {
+    class Botao extends React.Component<{ texto: string }> {
     render(): React.ReactNode {
         return (
             <button className={style.botao}  >
@@ -11,3 +11,5 @@ import style from './Botao.module.scss';
 
     }
 }
+
+export default Botao;

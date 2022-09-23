@@ -1,8 +1,8 @@
 import React from "react";
-import { Botao } from "../Botao";
+import Botao  from "../Botao";
 import style from './Formulario.module.scss';
 
-export class Formulario extends React.Component {
+class Formulario extends React.Component {
     render(): React.ReactNode {
         return (
             <form className={style.novaTarefa}>
@@ -36,3 +36,5 @@ export class Formulario extends React.Component {
         );
     }
 }
+
+export default Formulario;
