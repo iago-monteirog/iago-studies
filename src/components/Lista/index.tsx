@@ -1,4 +1,4 @@
-import {ITerefas}  from '../types/tarefa';
+import {ITerefas}  from '../../types/tarefa';
 import Item from './Item';
 import style from './Lista.module.scss';
 

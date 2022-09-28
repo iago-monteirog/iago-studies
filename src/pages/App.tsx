@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Interface } from "readline";
 import Cronometro from "../components/Cronometro";
 import Formulario from "../components/Formulario";
 import Lista from "../components/Lista";
-import { ITerefas } from "../components/types/tarefa";
+import { ITerefas } from "../types/tarefa";
 import style from './App.module.scss'
 
 
