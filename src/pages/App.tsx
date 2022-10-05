@@ -7,11 +7,18 @@ import style from './App.module.scss'
 
 
 function App() {
-  const [tarefas, setTarefas] = useState<Array<ITerefas> | [] > ([])
+  const [tarefas, setTarefas] = useState<ITerefas[] > ([]);
+  const [selecionado, setSelecionado] = useState<ITerefas>();
+
+  function selecionaTarefa(tarefaSelecionada: ITerefas) {
+    setSelecionado(tarefaSelecionada);
+  }
   return (
     <div className={style.AppStyle}>
         <Formulario setTarefas={setTarefas} />
-        <Lista tarefas={tarefas}  />
+        <Lista 
+          tarefas={tarefas} 
+          selecionaTarefa={selecionaTarefa} />
         <Cronometro />
     </div>
   );
