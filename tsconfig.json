@@ -19,6 +19,7 @@
     "isolatedModules": true,
     "noEmitOnError": true,
     "jsx": "react-jsx",
+    "downlevelIteration": true,
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "include": [
